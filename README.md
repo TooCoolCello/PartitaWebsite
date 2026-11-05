@@ -33,7 +33,9 @@ project URL.
 ## Before going live
 
 - Replace `contact@example.com` (every page) with your real email.
-- Divisi's pricing (Free / $15 Pro, $10 launch week, 14-day refund) is the launch plan, not yet
-  built into the app. Change it on `divisi/index.html` if the plan changes.
+- Pricing is the launch plan, not yet built into the apps: $15 per app ($10 in its launch week),
+  $20 for the Partita bundle (all three, Giusto when it ships), 14-day refund, and Divisi's free
+  tier (up to 3 apps). It appears on all three pages; change them together.
+- The buy buttons point at the beta or an email until a store (Gumroad, Lemon Squeezy) is set up.
 - Tacet's download points at the `TooCoolCello/micclean` GitHub release, which still installs
   under the name MicClean.
