@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divisi: every app, every output, one grid</title>
+<meta name="description" content="Divisi routes every Windows app to any output, or to several at once, from one grid. No account, no network, 0.6 MB.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-divisi">
+
+<header class="site-header">
+  <nav class="wrap" aria-label="Main">
+    <a class="brand" href="../"><img src="../favicon.svg" width="30" height="30" alt="">Partita</a>
+    <div class="nav-links">
+      <a href="./" aria-current="page">Divisi</a>
+      <a href="../tacet/">Tacet</a>
+      <a href="../#giusto">Giusto</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="btn btn-primary" href="#beta">Join the beta</a>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="stack">
+      <p class="eyebrow">Divisi · Audio routing for Windows 11</p>
+      <h1>Every app, every output, one grid.</h1>
+      <p class="lead">Discord in your headset. Game on your speakers. Music on stream but not in your ears. Click where an app meets an output and it plays there.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#beta">Join the beta</a>
+        <a class="btn btn-ghost" href="#features">See how it works</a>
+      </div>
+      <p class="small">Windows 11 · 0.6 MB · No account, no network, no telemetry</p>
+    </div>
+
+    <div class="hero-art">
+      <div class="window">
+        <div class="window-bar"><b>Divisi</b><span class="grow"></span><span class="chip">Profile: Streaming</span></div>
+        <div class="matrix">
+          <div class="matrix-grid">
+            <span></span><span class="out">Headphones</span><span class="out">Speakers</span><span class="out">Stream</span>
+
+            <div class="app"><span class="tile" style="background:#3a3a3a" aria-hidden="true">G</span><span><b>Global</b><small>Every other app</small></span></div>
+            <button class="cell" aria-pressed="true" aria-label="Global to Headphones"><span class="dot"></span><span class="gain">0 dB</span></button>
+            <button class="cell" aria-pressed="false" aria-label="Global to Speakers"><span class="dot"></span><span class="gain">0 dB</span></button>
+            <button class="cell" aria-pressed="false" aria-label="Global to Stream"><span class="dot"></span><span class="gain">0 dB</span></button>
+
+            <div class="app"><span class="tile" style="background:#3b4196" aria-hidden="true">D</span><span><b>Discord</b><small>Voice chat</small></span></div>
+            <button class="cell" aria-pressed="true" aria-label="Discord to Headphones"><span class="dot"></span><span class="gain">0 dB</span></button>
+            <button class="cell" aria-pressed="false" aria-label="Discord to Speakers"><span class="dot"></span><span class="gain">0 dB</span></button>
+            <button class="cell" aria-pressed="false" aria-label="Discord to Stream"><span class="dot"></span><span class="gain">0 dB</span></button>
+
+            <div class="app"><span class="tile" style="background:#2e6b45" aria-hidden="true">G</span><span><b>Game</b><small>game.exe, launcher</small></span></div>
+            <button class="cell" aria-pressed="true" aria-label="Game to Headphones"><span class="dot"></span><span class="gain">-3 dB</span></button>
+            <button class="cell" aria-pressed="false" aria-label="Game to Speakers"><span class="dot"></span><span class="gain">-3 dB</span></button>
+            <button class="cell" aria-pressed="true" aria-label="Game to Stream"><span class="dot"></span><span class="gain">-8 dB</span></button>
+
+            <div class="app"><span class="tile" style="background:#6b3a80" aria-hidden="true">S</span><span><b>Spotify</b><small>Music</small></span></div>
+            <button class="cell" aria-pressed="false" aria-label="Spotify to Headphones"><span class="dot"></span><span class="gain">-12 dB</span></button>
+            <button class="cell" aria-pressed="false" aria-label="Spotify to Speakers"><span class="dot"></span><span class="gain">-12 dB</span></button>
+            <button class="cell" aria-pressed="true" aria-label="Spotify to Stream"><span class="dot"></span><span class="gain">-12 dB</span></button>
+          </div>
+        </div>
+      </div>
+      <p class="small" style="text-align: center">Try it: click a cell to route an app to an output.</p>
+    </div>
+  </div>
+
+  <section class="alt" aria-labelledby="problem">
+    <div class="wrap">
+      <div class="section-head"><h2 id="problem">Routing audio on Windows shouldn't take an hour.</h2></div>
+      <div class="grid">
+        <div class="card"><h3>Hidden settings</h3><p>Windows buries per-app output deep in Settings, apps only show up after they play a sound, and choices don't always stick.</p></div>
+        <div class="card"><h3>Mixers built for engineers</h3><p>Virtual mixers can do anything, after a long tutorial, a buffer-size hunt and a fix every time Windows updates.</p></div>
+        <div class="card"><h3>Suites and sign-ins</h3><p>Brand apps want an account, a pile of virtual devices, or their own hardware before they'll route a thing.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>One grid. Nothing to learn.</h2>
+        <p>Apps down the side, outputs across the top. Click where they meet.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 12h5c4 0 4-6 8-6h4M8 12h12M8 12c4 0 4 6 8 6h4"/></svg>
+          <h3>One app, several outputs</h3>
+          <p>Put an app on two or more outputs and Divisi plays it on each, lined up to within 0.04 ms, with its own volume per output.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 4v16M12 4v16M18 4v16"/><rect x="4" y="13" width="4" height="3" rx="1" fill="currentColor"/><rect x="10" y="7" width="4" height="3" rx="1" fill="currentColor"/><rect x="16" y="11" width="4" height="3" rx="1" fill="currentColor"/></svg>
+          <h3>A mixer at every crossing</h3>
+          <p>Every route has its own gain, mute, solo and balance. Live meters show what's playing where.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+          <h3>Profiles</h3>
+          <p>Keep a Gaming, a Streaming and a Recording setup, and switch between them in one click.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/></svg>
+          <h3>Groups</h3>
+          <p>Put a game and its launcher, or every browser, on one row that plays together.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12a8 8 0 1 0 2.3-5.7M4 4v5h5"/></svg>
+          <h3>Everything goes back</h3>
+          <p>Divisi writes down what Windows had before it changes anything. Quit it, or even crash it, and a watchdog puts every setting back.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M13 3 5 14h6l-1 7 8-11h-6z"/></svg>
+          <h3>Light</h3>
+          <p>A 0.6 MB app that sleeps while nothing plays: no timers, no polling, no network.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" aria-labelledby="flyout">
+    <div class="wrap hero" style="padding-block: 0">
+      <div class="stack">
+        <h2 id="flyout">Your setup, one key away.</h2>
+        <p class="lead">Press a hotkey or click the tray icon and a quick mixer opens above the clock. Click to route, scroll to set a volume, switch profiles, and get back to your game.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="The tray flyout: a small grid of Discord, Game and Music against Phones, Speakers and Stream, above the Windows taskbar clock.">
+        <div class="window flyout" aria-hidden="true">
+          <div class="window-bar"><img src="../favicon.svg" width="16" height="16" alt=""><b>Divisi</b><span class="grow"></span><span class="chip">Streaming</span></div>
+          <div class="rows">
+            <span></span><span class="out">Phones</span><span class="out">Speakers</span><span class="out">Stream</span>
+            <span>Discord</span><span class="slot on"><span class="dot"></span></span><span class="slot"><span class="dot"></span></span><span class="slot"><span class="dot"></span></span>
+            <span>Game</span><span class="slot on"><span class="dot"></span></span><span class="slot"><span class="dot"></span></span><span class="slot on"><span class="dot"></span></span>
+            <span>Music</span><span class="slot"><span class="dot"></span></span><span class="slot"><span class="dot"></span></span><span class="slot on"><span class="dot"></span></span>
+          </div>
+          <div class="foot">Open Divisi</div>
+        </div>
+        <div class="taskbar" aria-hidden="true"><img src="../favicon.svg" width="16" height="16" alt="">9:41 PM</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Pay once. Keep it.</h2>
+        <p>Divisi is in beta. This is the plan for launch: no subscription, and Pro includes every 1.x update.</p>
+      </div>
+      <div class="grid" style="max-width: 760px">
+        <div class="card">
+          <h3>Free</h3>
+          <p class="price">$0</p>
+          <ul><li>Route up to 3 apps</li><li>The full matrix window</li><li>Routes remembered per app</li></ul>
+          <a class="btn btn-ghost" href="#beta">Join the beta</a>
+        </div>
+        <div class="card featured">
+          <h3>Pro</h3>
+          <p class="price">$15 <small>USD, one time</small></p>
+          <p style="color: var(--accent)">$10 during launch week</p>
+          <ul><li>Unlimited apps</li><li>Profiles</li><li>Tray flyout and hotkey</li><li>Every 1.x update</li></ul>
+          <a class="btn btn-primary" href="#beta">Join the beta</a>
+        </div>
+      </div>
+      <p class="small" style="margin-top: 20px">Not working on your setup? Email within 14 days for a full refund.</p>
+    </div>
+  </section>
+
+  <section id="faq" class="alt">
+    <div class="wrap faq">
+      <div class="section-head"><h2>Questions</h2></div>
+      <details><summary>Does it add virtual audio devices?</summary><p>No. It works with the outputs you already have. For a separate stream mix, install a virtual cable such as VB-Cable and Divisi shows it as an output.</p></details>
+      <details><summary>Does it work with OBS and Discord?</summary><p>Yes. Leave their output on Default and Divisi routes them like any other app. An app set to a specific device in its own settings plays there whatever Divisi does.</p></details>
+      <details><summary>Will it slow my games down?</summary><p>An app on one output uses Windows' own routing, so it costs nothing. An app on several outputs goes through Divisi's engine, which uses about 1.6 ms of CPU per second and adds 4 to 20 ms of delay.</p></details>
+      <details><summary>What about fullscreen games?</summary><p>Borderless and windowed games work as normal: the quick mixer opens over them. In exclusive fullscreen the hotkey does nothing, so your game isn't minimized.</p></details>
+      <details><summary>What if Divisi crashes?</summary><p>A watchdog puts back everything Divisi changed. If both stop at once, say in a power cut, Divisi restores everything first the next time it starts.</p></details>
+      <details><summary>Which Windows versions does it run on?</summary><p>Windows 11.</p></details>
+    </div>
+  </section>
+
+  <section id="beta">
+    <div class="wrap stack center" style="max-width: 720px">
+      <h2>Fix your stream audio for good.</h2>
+      <p class="lead">Divisi is in beta. Email me to get a copy and help shape it.</p>
+      <a class="btn btn-primary" href="mailto:contact@example.com?subject=Divisi%20beta">Email me for the beta</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Partita</span>
+    <a href="../">Home</a>
+    <a href="../tacet/">Tacet</a>
+    <a href="mailto:contact@example.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+  // ponytail: demo only, the cells just toggle
+  for (const cell of document.querySelectorAll('.cell')) {
+    cell.addEventListener('click', () => cell.setAttribute('aria-pressed', cell.getAttribute('aria-pressed') !== 'true'));
+  }
+</script>
+</body>
+</html>

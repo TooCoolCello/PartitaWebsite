@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partita: audio apps for Windows</title>
+<meta name="description" content="Partita is a small suite of Windows audio apps. Divisi routes every app to any output, Tacet cleans up your mic, and Giusto is coming soon for headphones.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap" aria-label="Main">
+    <a class="brand" href="./" aria-current="page"><img src="favicon.svg" width="30" height="30" alt="">Partita</a>
+    <div class="nav-links">
+      <a href="divisi/">Divisi</a>
+      <a href="tacet/">Tacet</a>
+      <a href="#giusto">Giusto</a>
+      <a href="#names">Why the names</a>
+    </div>
+    <a class="btn btn-primary" href="tacet/#download">Get Tacet free</a>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="stack">
+      <p class="eyebrow">Audio apps for Windows</p>
+      <h1>Every part in its place.</h1>
+      <p class="lead">Partita is a small suite of Windows audio apps. Each one does one job, lives in your tray and needs no account. Send every app to the right output, clean up your mic, and soon, tune your headphones.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#apps">See the apps</a>
+        <a class="btn btn-ghost" href="#names">Why the names?</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="score" viewBox="0 0 600 210" role="img" aria-label="A bar of sheet music with the three markings the apps are named after: div., tacet and giusto.">
+        <path class="staff-lines" d="M10 70H590M10 90H590M10 110H590M10 130H590M10 150H590M10 70V150M200 70V150M400 70V150M590 70V150" fill="none"/>
+        <g style="color: var(--divisi)">
+          <text x="34" y="46">div.</text>
+          <path d="M34 110H86C120 110 120 80 150 80M86 110H150M86 110C120 110 120 140 150 140" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="160" cy="80" rx="11" ry="8" transform="rotate(-20 160 80)" fill="currentColor"/>
+          <ellipse cx="160" cy="110" rx="11" ry="8" transform="rotate(-20 160 110)" fill="currentColor"/>
+          <ellipse cx="160" cy="140" rx="11" ry="8" transform="rotate(-20 160 140)" fill="currentColor"/>
+        </g>
+        <g style="color: var(--tacet)">
+          <rect x="280" y="90" width="40" height="13" fill="currentColor"/>
+          <text x="300" y="196" text-anchor="middle">tacet</text>
+        </g>
+        <g style="color: var(--giusto)">
+          <text x="424" y="46">giusto</text>
+          <ellipse cx="495" cy="120" rx="16" ry="10.5" fill="none" stroke="currentColor" stroke-width="5" transform="rotate(-20 495 120)"/>
+        </g>
+      </svg>
+      <p class="small" style="text-align: center">Each app is named after a marking from sheet music.</p>
+    </div>
+  </div>
+
+  <section id="apps" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The suite</h2>
+        <p>Use one on its own, or run them together.</p>
+      </div>
+      <div class="grid">
+        <article class="card product" style="--c: var(--divisi)">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 12h5c4 0 4-6 8-6h4M8 12h12M8 12c4 0 4 6 8 6h4"/></svg>
+          <h3>Divisi</h3>
+          <p class="meaning"><em>div.</em> The section splits to play separate parts.</p>
+          <p class="pitch">Send every app to any output, or to several at once, from one grid.</p>
+          <span class="pill">Beta sign-ups open</span>
+          <a class="btn" href="divisi/">Explore Divisi</a>
+        </article>
+        <article class="card product" style="--c: var(--tacet)">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 8h18"/><rect x="8" y="8" width="8" height="4" fill="currentColor" stroke="none"/><path d="M3 16h18" opacity="0.4"/></svg>
+          <h3>Tacet</h3>
+          <p class="meaning"><em>tacet</em> This part stays silent. Here, it's the noise.</p>
+          <p class="pitch">Removes noise and echo from your mic before Discord, OBS or anything else hears it.</p>
+          <span class="pill">Free download</span>
+          <a class="btn" href="tacet/">Explore Tacet</a>
+        </article>
+        <article id="giusto" class="card product" style="--c: var(--giusto)">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 3v7a3 3 0 0 0 6 0V3M12 13v8"/></svg>
+          <h3>Giusto</h3>
+          <p class="meaning"><em>giusto</em> Exactly right, as in <i>tempo giusto</i>.</p>
+          <p class="pitch">An app for your headphones, so they sound exactly right.</p>
+          <span class="pill">Coming soon</span>
+          <a class="btn btn-ghost" href="mailto:contact@example.com?subject=Tell%20me%20when%20Giusto%20is%20out">Get notified</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Better together</h2>
+        <p>Tacet cleans your voice. Divisi decides where every sound goes. Run both and your stream gets a clean mic, your game and your music, while Discord stays in your headset.</p>
+      </div>
+      <div class="stack">
+        <div class="flow" role="img" aria-label="Your mic goes through Tacet, then to Discord and OBS.">
+          <span aria-hidden="true">Your mic</span><span class="arrow" aria-hidden="true">→</span>
+          <span class="hl" style="--hl: var(--tacet)" aria-hidden="true">Tacet</span><span class="arrow" aria-hidden="true">→</span>
+          <span aria-hidden="true">Discord, OBS</span>
+        </div>
+        <div class="flow" role="img" aria-label="Your apps go through Divisi, then to your headphones, speakers and stream.">
+          <span aria-hidden="true">Your apps</span><span class="arrow" aria-hidden="true">→</span>
+          <span class="hl" style="--hl: var(--divisi)" aria-hidden="true">Divisi</span><span class="arrow" aria-hidden="true">→</span>
+          <span aria-hidden="true">Headphones, speakers, stream</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How they're built</h2>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>One job each</h3>
+          <p>Each app does one thing well. Install the one you need; none of them depends on another.</p>
+        </div>
+        <div class="card">
+          <h3>No account</h3>
+          <p>Nothing to sign in to and no vendor suite running in the background. Your settings stay on your PC.</p>
+        </div>
+        <div class="card">
+          <h3>Out of the way</h3>
+          <p>They live in the tray and can start with Windows. Open one when you need it and forget it when you don't.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="names">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Why the names?</h2>
+        <p>Each app is named after a marking you'd find in a cello part.</p>
+      </div>
+      <dl class="names">
+        <div><dt style="color: var(--gold)">Partita</dt><dd>A suite of pieces for one instrument, like Bach's partitas for solo violin. Here, a suite of apps.</dd></div>
+        <div><dt style="color: var(--divisi)">Divisi</dt><dd>Written when a section splits, some players taking the top line and some the bottom. Divisi splits an app's sound across your outputs.</dd></div>
+        <div><dt style="color: var(--tacet)">Tacet</dt><dd>Tells a player to stay silent for the whole passage. In Tacet, it's the noise that stays silent.</dd></div>
+        <div><dt style="color: var(--giusto)">Giusto</dt><dd>As in <i>tempo giusto</i>: exactly the right tempo. Giusto will make your headphones sound exactly right.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Partita</span>
+    <a href="divisi/">Divisi</a>
+    <a href="tacet/">Tacet</a>
+    <a href="mailto:contact@example.com">Contact</a>
+    <a href="https://github.com/TooCoolCello">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
