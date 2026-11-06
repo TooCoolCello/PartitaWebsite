@@ -34,8 +34,10 @@ project URL.
 
 - Replace `contact@example.com` (every page) with your real email.
 - Pricing is the launch plan, not yet built into the apps: $15 per app ($10 in its launch week),
-  $20 for the Partita bundle (all three, Giusto when it ships), 14-day refund, and Divisi's free
-  tier (up to 3 apps). It appears on all three pages; change them together.
+  $20 for the Partita bundle (all three, Giusto when it ships), 14-day refund, and free tiers:
+  Divisi routes up to 3 apps; Tacet keeps noise removal, echo cancellation and the voice gate,
+  while Smart setup, Teach it your room, the voice chain and the before/after comparison are paid.
+  It appears on all three pages; change them together.
 - The buy buttons point at the beta or an email until a store (Gumroad, Lemon Squeezy) is set up.
 - Tacet's download points at the `TooCoolCello/micclean` GitHub release, which still installs
   under the name MicClean.
